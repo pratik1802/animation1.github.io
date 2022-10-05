@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }    
+       
+       
+       #main{
+            height: 100px;
+            width: 100px;
+            
+            background-color: yellow;
+            animation: anime1 4s;
+            animation-iteration-count: 2;
+            animation-delay: 2s;
+            
+
+        }
+        @keyframes anime1 {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25%{
+                margin-left:70rem;
+                margin-top:0px;
+                background-color: whitesmoke;
+                transform:rotate(100deg);
+            }
+            50%{
+                margin-left: 70rem;
+                margin-top :20rem;
+                background-color: red;
+                transform: rotate(200deg);
+                
+            }
+            75%{
+                margin-left:0;
+                margin-top: 20rem;
+                background-color: violet;
+                transform: rotate(300deg);
+            }
+            100%{
+                margin-left: 0;
+                margin-top: 0;
+                background-color:olivedrab ;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        animation
+        <div></div>
+    </div>
+</body>
+</html>
